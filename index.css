@@ -9,6 +9,7 @@ body {
 
 #body-wrapper {
     border: solid 3px #0D0D0D;
+    border-right: none;
     display:flex;
     flex-direction: column;
     max-width: 90%;
