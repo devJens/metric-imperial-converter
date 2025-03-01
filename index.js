@@ -24,11 +24,11 @@ function renderMetric(units) {
 
 btnEl.addEventListener ("click", function() {
 
-    lengthEl.innerHTML = `<p> ${inputEl.value} meters = <span>${renderImperial(length).toFixed(3)}</span> feet | ${inputEl.value} feet = ${renderMetric(length).toFixed(3)} meters </p>`
+    lengthEl.innerHTML += `<p> ${inputEl.value} meters = <span>${renderImperial(length).toFixed(3)}</span> feet | ${inputEl.value} feet = ${renderMetric(length).toFixed(3)} meters </p>`
     
-    volumeEl.innerHTML = `<p> ${inputEl.value} liters = <span>${renderImperial(volume).toFixed(3)}</span> gallons | ${inputEl.value} gallons = <span>${renderMetric(volume).toFixed(3)}</span> liters </p>`
+    volumeEl.innerHTML += `<p> ${inputEl.value} liters = <span>${renderImperial(volume).toFixed(3)}</span> gallons | ${inputEl.value} gallons = <span>${renderMetric(volume).toFixed(3)}</span> liters </p>`
     
-    massEl.innerHTML = `<p> ${inputEl.value} kilos = <span>${renderImperial(mass).toFixed(3)}</span> pounds | ${inputEl.value} pound = <span>${renderMetric(mass).toFixed(3)}</span> kilos </p>`
+    massEl.innerHTML += `<p> ${inputEl.value} kilos = <span>${renderImperial(mass).toFixed(3)}</span> pounds | ${inputEl.value} pound = <span>${renderMetric(mass).toFixed(3)}</span> kilos </p>`
 }
 )
 
