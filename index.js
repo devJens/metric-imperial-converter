@@ -12,6 +12,7 @@ const btnEl = document.getElementById ("btn-el")
 const lengthEl = document.getElementById("length")
 const volumeEl = document.getElementById("volume")
 const massEl = document.getElementById("mass")
+const resetEl = document.getElementById("reset-btn")
 
 function renderImperial(units) {
    return inputEl.value * units
@@ -32,6 +33,12 @@ btnEl.addEventListener ("click", function() {
 }
 )
 
+resetEl.addEventListener ("click", function () {
+    inputEl.value = ""
+    lengthEl.innerHTML = ""
+    volumeEl.innerHTML = ""
+    massEl.innerHTML = ""
+})
 
 
 
